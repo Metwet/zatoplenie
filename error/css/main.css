@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.error404{
+    background: conic-gradient(from 171.26deg at 45.75% 112.5%, #5683C6 0deg, #000000 116.25deg, #5683C6 360deg); /* Цвет фона веб-страницы */
+	width: 100%;
+    height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.tittleerror{
+	padding-top: 216px;
+	display: flex;
+}
+
+.tittleerror img{
+	margin-right: 45px;
+}
+
+.tittleerror p{
+	display: flex;
+    align-items: flex-end;
+	font-family: 'Montserrat', semibold;
+	font-weight: 600;
+	font-size: 60px;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	box-sizing: border-box;
+}
+
+.page__NF{
+	margin-top: 93px;
+	font-family: 'Montserrat', normal;
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 166.4%;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+}
+
+.main__problem{
+	margin-top: 20px;
+	width: 500px;
+	font-family: 'Montserrat', regular;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 166.4%;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+}
+
+a{
+	font-family: 'Montserrat', normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 166.4%;
+	letter-spacing: 0.01em;
+	color: #31B0DF;
+}
+
+.robot{
+	position: absolute;
+	left: 348px;
+	top: 84px;
+}
