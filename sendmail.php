@@ -36,6 +36,7 @@
 
     $mail->setFrom('advokat.nkl@gmail.com', 'Заявка с вашего сайта');
     $mail->addAddress('tselm.nkl@gmail.com');
+    $mail->addAddress('advokat.nkl@gmail.com');
 
     $mail->IsHTML(true);
     $mail->Subject = $title;

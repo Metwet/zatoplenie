@@ -18,27 +18,63 @@ addEventListener("scroll", function() {
 	}
 	if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset){
  	   header.classList.add('hide');
+		closeMenu();
 	} else if (scrollPosition() < lastScroll && containHide()) {
-	    header.style.background = ('rgba(25, 38, 57, 0.61)');
+	    header.style.background = ('#0C202F');
+	    //header.style.background = ('rgba(25, 38, 57, 0.61)');
     	header.classList.remove('hide');
     }
     lastScroll = scrollPosition();
 });
 
+//burger
+let menuBurger = document.querySelector('.burger_menu');
+let menuBurgerImg = document.querySelector('.burger img');
+let statusMenu = true;
+let menuLinkMini = document.querySelectorAll(".menu_link_mini");
+
+function openMenu() {
+	menuBurgerImg.src = "./img/krest.svg";
+	menuBurger.style.display = "block";
+	statusMenu = false;
+}
+
+function closeMenu(){
+	menuBurgerImg.src = "./img/burger.svg";
+	menuBurger.style.display = "none";
+	statusMenu = true;
+}
+
+document.querySelector('.burger').addEventListener('click', function(){
+	(statusMenu == true)?openMenu():closeMenu();
+});
+
+for (let i = 0; i < menuLinkMini.length; i++) {
+	let linkMenu = menuLinkMini[i];
+	linkMenu.addEventListener('click', function(){
+		console.log("click menu_link_mini")
+		closeMenu();
+	});
+}
+
+
 // slider old (yes, it is bad)
 
 var offset = 0;
 var sliderLine = document.querySelector('.cases-line');
+var moveValue = sliderLine.offsetWidth;
 
 document.querySelector('.right-arrow').addEventListener('click', function(){
-	if (sliderLine.offsetWidth == 1340){
-		offset += 340;
-		if(offset >= 1360){
+	if (moveValue == 2060 || moveValue == 1340){
+		console.log("in new right");
+		offset += (moveValue+20)/4;
+		if(offset >= moveValue+20){
 			offset = 0;
 		}
 	} else {
-		offset += 595;
-		if(offset >= 1785){
+		console.log("in old right");
+		offset += (moveValue+20)/4;
+		if(offset >= (moveValue+20)*3/4){
 			offset = 0;
 		}
 	}
@@ -46,15 +82,17 @@ document.querySelector('.right-arrow').addEventListener('click', function(){
 });
 
 document.querySelector('.left-arrow').addEventListener('click', function(){
-	if (sliderLine.offsetWidth == 1340){
-		offset -= 340;
+	if (moveValue == 2060 || moveValue == 1340){
+		console.log("in new left");
+		offset -= (moveValue+20)/4;
 		if(offset < 0){
-			offset = 1020;
+			offset = (moveValue+20)*3/4;
 		}
 	} else {
-		offset -= 595;
+		console.log("in old left");
+		offset -= (moveValue+20)/4;
 		if(offset < 0){
-			offset = 1190;
+			offset = (moveValue+20)/2;
 		}
 	}
 	sliderLine.style.left = -offset + 'px';
@@ -132,6 +170,7 @@ document.querySelector('.left-arrow').addEventListener('click', moveLeft);
 var onPhoneInput = function(e){
 	let input = e.target,
 		inputNumbersValue = getInputNumbersValue(input),
+		inForm = document.querySelectorAll('input[data-tel-input]'),
 		formattedInputValue = "";
 	if(!inputNumbersValue){
 		return input.value = "";
@@ -151,6 +190,10 @@ var onPhoneInput = function(e){
 		formattedInputValue += "-" + inputNumbersValue.substring(8,10);;
 	}
 	input.value = formattedInputValue;
+	if (input.value.length == 15) {
+		inForm[2].value = "+7 " + formattedInputValue;
+	}
+	console.log(input.value.length);
 }
 
 var onPhoneInputInForm = function(e){
@@ -190,7 +233,6 @@ var getInputNumbersValue = function(input){
 
 var onPhoneKeyDown = function(e){
 	let input = e.target;
-	console.log(getInputNumbersValue(input).length);
 	if(e.keyCode == 8 && getInputNumbersValue(input).length == 1){
 		input.value = "";
 	}
