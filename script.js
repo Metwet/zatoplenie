@@ -1,13 +1,10 @@
-console.log(new Date());
-
-
 // header
 
-var header = document.querySelector('header');
-var lastScroll = 0;
-var defaultOffset = 200;
-var scrollPosition = () => window.pageYOffset;
-var containHide = () => header.classList.contains('hide');
+const header = document.querySelector('header');
+let lastScroll = 0;
+const defaultOffset = 200;
+const scrollPosition = () => window.pageYOffset;
+const containHide = () => header.classList.contains('hide');
 
 addEventListener("scroll", function() {
 	if (scrollPosition() < 900) {
@@ -21,17 +18,16 @@ addEventListener("scroll", function() {
 		closeMenu();
 	} else if (scrollPosition() < lastScroll && containHide()) {
 	    header.style.background = ('#0C202F');
-	    //header.style.background = ('rgba(25, 38, 57, 0.61)');
     	header.classList.remove('hide');
     }
     lastScroll = scrollPosition();
 });
 
 //burger
-let menuBurger = document.querySelector('.burger_menu');
-let menuBurgerImg = document.querySelector('.burger img');
+const menuBurger = document.querySelector('.burger_menu');
+const menuBurgerImg = document.querySelector('.burger img');
 let statusMenu = true;
-let menuLinkMini = document.querySelectorAll(".menu_link_mini");
+const menuLinkMini = document.querySelectorAll(".menu_link_mini");
 
 function openMenu() {
 	menuBurgerImg.src = "./img/krest.svg";
@@ -50,29 +46,26 @@ document.querySelector('.burger').addEventListener('click', function(){
 });
 
 for (let i = 0; i < menuLinkMini.length; i++) {
-	let linkMenu = menuLinkMini[i];
+	const linkMenu = menuLinkMini[i];
 	linkMenu.addEventListener('click', function(){
-		console.log("click menu_link_mini")
 		closeMenu();
 	});
 }
 
 
-// slider old (yes, it is bad)
+// slider old
 
-var offset = 0;
-var sliderLine = document.querySelector('.cases-line');
-var moveValue = sliderLine.offsetWidth;
+let offset = 0;
+const sliderLine = document.querySelector('.cases-line');
+const moveValue = sliderLine.offsetWidth;
 
 document.querySelector('.right-arrow').addEventListener('click', function(){
 	if (moveValue == 2060 || moveValue == 1340){
-		console.log("in new right");
 		offset += (moveValue+20)/4;
 		if(offset >= moveValue+20){
 			offset = 0;
 		}
 	} else {
-		console.log("in old right");
 		offset += (moveValue+20)/4;
 		if(offset >= (moveValue+20)*3/4){
 			offset = 0;
@@ -83,13 +76,11 @@ document.querySelector('.right-arrow').addEventListener('click', function(){
 
 document.querySelector('.left-arrow').addEventListener('click', function(){
 	if (moveValue == 2060 || moveValue == 1340){
-		console.log("in new left");
 		offset -= (moveValue+20)/4;
 		if(offset < 0){
 			offset = (moveValue+20)*3/4;
 		}
 	} else {
-		console.log("in old left");
 		offset -= (moveValue+20)/4;
 		if(offset < 0){
 			offset = (moveValue+20)/2;
@@ -98,76 +89,9 @@ document.querySelector('.left-arrow').addEventListener('click', function(){
 	sliderLine.style.left = -offset + 'px';
 });
 
-
-
-// new clider
-
-/*var offset = 0,
-	sliderLine = document.querySelector('.cases-line'),
-	caseTitle = document.querySelectorAll('.case-title'),
-	casePerson = document.querySelectorAll('.case-person'),
-	caseText = document.querySelectorAll('.case-text');
-	numberOfCase = 0;
-
-var moveRight = function(){
-	offset += 595;
-	if(offset >= 1785){
-		//работает заебись
-		createNewOldCase(numberOfCase);
-		++numberOfCase;
-		if (numberOfCase > 3) {
-			numberOfCase = 0;
-		}
-		console.log(numberOfCase);
-	}
-	sliderLine.style.left = -offset + 'px';
-}
-
-var moveLeft = function(){
-	offset -= 595;
-	if(offset < 0){
-		//нихуя не работает сучка
-		createNewOldCase(numberOfCase);
-	}
-	sliderLine.style.left = -offset + 'px';
-}
-
-var createNewOldCase = function(numberOfCase){
-	let newCase = document.createElement("div"),
-		newCaseTitle = document.createElement("div"),
-		newCasePerson = document.createElement("div"),
-		newCaseText = document.createElement("div");
-	
-	newCase.classList.add('case');
-	newCaseTitle.classList.add('case-title');
-	newCasePerson.classList.add('case-person');
-	newCaseText.classList.add('case-text');
-
-	if(offset >= 1785) {
-		sliderLine.appendChild(newCase);
-	} else if (offset <= 0){
-		console.log("in else");;
-		sliderLine.insertBefore(newCase, sliderLine.children[0]);
-	}
-	
-	newCaseTitle.innerHTML = caseTitle[numberOfCase].innerHTML;
-	newCasePerson.innerHTML = casePerson[numberOfCase].innerHTML;
-	newCaseText.innerHTML = caseText[numberOfCase].innerHTML;
-
-	newCase.appendChild(newCaseTitle);
-	newCase.appendChild(newCasePerson);
-	newCase.appendChild(newCaseText);
-}
-
-document.querySelector('.right-arrow').addEventListener('click', moveRight);
-document.querySelector('.left-arrow').addEventListener('click', moveLeft);
-*/
-
-
-
 // telephon-input & form handler
 
-var onPhoneInput = function(e){
+const onPhoneInput = function(e){
 	let input = e.target,
 		inputNumbersValue = getInputNumbersValue(input),
 		inForm = document.querySelectorAll('input[data-tel-input]'),
@@ -193,10 +117,9 @@ var onPhoneInput = function(e){
 	if (input.value.length == 15) {
 		inForm[2].value = "+7 " + formattedInputValue;
 	}
-	console.log(input.value.length);
 }
 
-var onPhoneInputInForm = function(e){
+const onPhoneInputInForm = function(e){
 	let input = e.target,
 		inputNumbersValue = getInputNumbersValue(input),
 		formattedInputValue = "";
@@ -227,11 +150,11 @@ var onPhoneInputInForm = function(e){
 	input.value = formattedInputValue;
 }
 
-var getInputNumbersValue = function(input){
+const getInputNumbersValue = function(input){
 	return input.value.replace(/\D/g, "");
 }
 
-var onPhoneKeyDown = function(e){
+const onPhoneKeyDown = function(e){
 	let input = e.target;
 	if(e.keyCode == 8 && getInputNumbersValue(input).length == 1){
 		input.value = "";
@@ -264,12 +187,12 @@ function formValidata(form){
 	return error;
 }
 
-var formAddError = function(input){
+const formAddError = function(input){
 	//input.parentElement.classList.add("_error");
 	input.classList.add("_error");
 }
 
-var formRemoveError = function(input){
+const formRemoveError = function(input){
 	//input.parentElement.classList.remove("_error");
 	input.classList.remove("_error");
 }
@@ -280,8 +203,8 @@ function emailTest(input){
 
 
 document.addEventListener("DOMContentLoaded", function(){
-	var phoneInputs = document.querySelectorAll('input[data-tel-input]');
-	for (var i = 0; i < phoneInputs.length; i++){
+	const phoneInputs = document.querySelectorAll('input[data-tel-input]');
+	for (let i = 0; i < phoneInputs.length; i++){
 		let input = phoneInputs[i];
 		if(i>1){
 			input.addEventListener("input", onPhoneInputInForm);
@@ -296,13 +219,11 @@ document.addEventListener("DOMContentLoaded", function(){
 	form.addEventListener("submit", formSend);
 
 	async function formSend(e){
-		console.log("in formSend");
 		e.preventDefault();
 		let error = formValidata(form);
 
 		let formData = new FormData(form);
 		if (error === 0) {
-			//второй вариант
 			form.classList.add('_sending');
 			let xhr = new XMLHttpRequest();
 
@@ -319,22 +240,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 			form.reset();
 		    form.classList.remove('_sending');
-		    //первый вариант
-			/*let response = await fetch('sendmail.php', {
-				method: 'POST',
-				body: formData
-			});
-			if(response.ok) {
-				let result = await response.json();
-				alert(result.message);
-				form.reset();
-				form.classList.remove('_sending');
-			} else {
-				alert("Error, blet");
-				form.classList.remove('_sending');
-			}*/
 		} else {
-			/*alert('Заполни форму как следует please');*/
 			swal({
 			  title: "Ошибка отправки!",
 			  text: "Заполните обязательные поля и дайте согласие на обработку персональных данных для отправки данных",

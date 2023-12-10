@@ -88,32 +88,6 @@ h1,h2,h3,h4,h5,h6{
 	padding: 0 10px;
 }
 
-/* .button_hate {
-	width: 313px;
-	height: 65px;
-	background: linear-gradient(94.49deg, #CC6922 22.49%, #FF4D4D 81.16%);
-	border-radius: 41px;
-	margin-top: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.button_hate_link {
-	display: inline-block;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 29px;
-	height: 80%;
-	width: 80%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 43px;
-	background: linear-gradient(102.37deg, rgba(196, 196, 196, 0.091) -1.6%, rgba(196, 196, 196, 0.014) 100%);;
-
-} */
-
 .button {
 	display: inline-block;
 	font-family: 'Montserrat', bold, serif;
@@ -131,22 +105,8 @@ h1,h2,h3,h4,h5,h6{
 	width: 313px;
 	height: 65px;
 	padding-top: 16px;
+	border: #FF3131 3px solid;
 }
-
-.button:before {
-	content: "";
- 	position: absolute;
-	inset: 0;
-	border-radius: 43px;
-	padding: 3px;
-	background: linear-gradient(94.49deg, #CC6922 22.49%, #FF4D4D 81.16%);
-	-webkit-mask:
-		linear-gradient(#fff 0 0) content-box, 
-		linear-gradient(#fff 0 0);
-	-webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
-
 
 .button:hover {
 	background: #12161E;
@@ -212,7 +172,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .phone_number {
-	/*flex: 1 1 auto;*/
 	display: flex;
 	justify-content: flex-end;
 
@@ -281,12 +240,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .start_block_container {
-	/*display: flex;*/
 	position: relative;
-}
-
-.start_content {
-	/*flex: 0 1 50%;*/
 }
 
 .block-text {
@@ -309,7 +263,6 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 400;
 	font-size: 25px;
 	line-height: 166.4%;
-	/* or 42px */
 	letter-spacing: 0.01em;
 	color: #FFFFFF;
 
@@ -322,7 +275,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .start_img {
-	/*flex: 0 1 50%;*/
 	position: absolute;
 	z-index: 100;
 	left: 380px;
@@ -349,9 +301,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 900;
 	font-size: 45px;
 	line-height: 55px;
-
 	color: #FFFFFF;
-
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -403,7 +353,6 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 122.9%;
-	/* or 25px */
 	color: #FFFFFF;
 	padding-bottom: 8px;
 }
@@ -414,8 +363,6 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 122.9%;
-	/* or 21px */
-
 	letter-spacing: 0.01em;
 
 	color: #FFFFFF;
@@ -436,17 +383,13 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 900;
 	font-size: 45px;
 	line-height: 55px;
-
 	color: #FFFFFF;
-
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
 	padding: 11px 0 0 0;
 }
 
 .useful_content {
 	display: inline-block;
-	/* display: inline-block; */
 	padding-top: 35px;
 }
 
@@ -468,15 +411,12 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 600;
 	font-size: 35px;
 	line-height: 43px;
-
 	background: linear-gradient(90deg, #72C3FF 0.08%, #2B99FF 94.64%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
-
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
 	padding-bottom: 25px;
 }
 
@@ -487,9 +427,7 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 17px;
 	line-height: 21px;
 	text-align: justify;
-
 	color: #FFFFFF;
-
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -509,10 +447,6 @@ h1,h2,h3,h4,h5,h6{
 	padding-left: 15px;
 	list-style-position: inside;
 }
-
-.useful_img_q3 {
-	/*float: left;
-*/}
 
 .useful_img_q4 {
 	padding-top: 30px;
@@ -595,9 +529,7 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 24px;
 	line-height: 29px;
 	text-align: center;
-
 	color: #FFFFFF;
-
 	background: #2A2D31;;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 	backdrop-filter: blur(5px);
@@ -614,7 +546,6 @@ h1,h2,h3,h4,h5,h6{
 .team_block {
 	height: 815px;
 	background: rgba(11, 12, 16, 0.55);
-	/* backdrop-filter: blur(15px); */
 }
 
 .team_block_container_mini {
@@ -629,7 +560,6 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 55px;
 	color: #FFFFFF;
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
 	padding-top: 60px;
 }
 
@@ -643,37 +573,18 @@ h1,h2,h3,h4,h5,h6{
 .lawyer {
 	background: rgba(108, 108, 108, 0.13);
 	backdrop-filter: blur(10px);
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
-
 	height: 524px;
 	width: 331px;
-
 	margin-top: 30px;
 	transition-duration: 0.5s;
-/*	justify-content: center;
-	align-items: center;*/
 }
 
 .lawyer:hover {
-	/*width: 370px;*/
 	height: 559px;
 	margin-top: 15px;
 	align-items: stretch;
-}
-
-.lawyer:hover:before {
-	content: "";
- 	position: absolute;
-	inset: 0;
-	border-radius: 30px;
-	padding: 3px;
-	background: linear-gradient(94.49deg, #CC6922 22.49%, #FF4D4D 81.16%);
-	-webkit-mask: 
-		linear-gradient(#fff 0 0) content-box, 
-		linear-gradient(#fff 0 0);
-	-webkit-mask-composite: xor;
-    mask-composite: exclude;
+	border: #FF3131 3px solid;
 }
 
 .lawyer img {
@@ -719,7 +630,6 @@ h1,h2,h3,h4,h5,h6{
 
 .price_block {
 	background: rgba(11, 12, 16, 0.55);
-	/* backdrop-filter: blur(15px); */
 }
 
 .price_title {
@@ -728,11 +638,8 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 900;
 	font-size: 45px;
 	line-height: 55px;
-
 	color: #FFFFFF;
-
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
 	padding: 25px 0 62px 0;
 }
 
@@ -745,9 +652,7 @@ h1,h2,h3,h4,h5,h6{
 .price {
 	background: rgba(133, 133, 133, 0.13);
 	backdrop-filter: blur(10px);
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
-
 	height: 682px;
 	width: 546px;
 
@@ -760,9 +665,7 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 26px;
 	line-height: 32px;
 	text-align: center;
-
 	color: #FFFFFF;
-
 	background: rgba(0, 0, 0, 0.39);
 	height: 93px;
 	border-radius: 30px 30px 0 0;
@@ -779,7 +682,6 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 21px;
-
 	color: rgba(255, 255, 255, 0.7);
 }
 
@@ -790,15 +692,11 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 28px;
 	line-height: 34px;
 	letter-spacing: 0.04em;
-
-	/* 2 */
-
 	background: linear-gradient(90deg, #72C3FF 0.08%, #2B99FF 94.64%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
-
 	padding: 6px 0 28px 0;
 }
 
@@ -808,7 +706,6 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 21px;
-
 	color: #FFFFFF;
 }
 
@@ -824,7 +721,6 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 500;
 	font-size: 19px;
 	line-height: 23px;
-
 	color: #FFFFFF;
 	padding: 15px 0 47px 0;
 }
@@ -837,7 +733,6 @@ h1,h2,h3,h4,h5,h6{
 
 .cases_block {
 	background: rgba(11, 12, 16, 0.55);
-	/* backdrop-filter: blur(15px); */
 }
 
 .cases_block_container {
@@ -874,34 +769,11 @@ h1,h2,h3,h4,h5,h6{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: #FF3131 3px solid;
 }
 
-.arrow:before {
-	content: "";
- 	position: absolute;
-	inset: 0;
-	border-radius: 43px;
-	padding: 3px;
-	background: linear-gradient(270deg, #FF6E60 2.78%, #FF3131 97.22%);
-	-webkit-mask: 
-		linear-gradient(#fff 0 0) content-box, 
-		linear-gradient(#fff 0 0);
-	-webkit-mask-composite: xor;
-    mask-composite: exclude;
-}
-
-.arrow:hover:before {
-	content: "";
- 	position: absolute;
-	inset: 0;
-	border-radius: 43px;
-	padding: 3px;
-	background: linear-gradient(90deg, #B46125 0%, #C43A3A 100%);
-	-webkit-mask: 
-		linear-gradient(#fff 0 0) content-box, 
-		linear-gradient(#fff 0 0);
-	-webkit-mask-composite: xor;
-    mask-composite: exclude;
+.arrow:hover {
+	border: #C43A3A 3px solid;
 }
 
 .arrow:active {
@@ -926,7 +798,6 @@ h1,h2,h3,h4,h5,h6{
 	position: absolute;
 	left: 0px;
 	transition: all ease 1s;
-	/*left: -595px;*/
 }
 
 .case {
@@ -940,14 +811,12 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 29px;
-	/* 2 */
 	background: linear-gradient(90deg, #72C3FF 0.08%, #2B99FF 94.64%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 	height: 80px;
 }
 
@@ -1003,17 +872,13 @@ h1,h2,h3,h4,h5,h6{
 	height: 76px;
 	background: rgba(108, 108, 108, 0.2);
 	backdrop-filter: blur(10px);
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
-
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 27px;
-	/* identical to box height */
 	color: #FFFFFF;
-
 	padding-left: 47px;
 	padding-right: 20px;
 }
@@ -1023,17 +888,13 @@ h1,h2,h3,h4,h5,h6{
 	height: 76px;
 	background: rgba(108, 108, 108, 0.2);
 	backdrop-filter: blur(10px);
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
-
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 27px;
-	/* identical to box height */
 	color: #FFFFFF;
-
 	padding-left: 47px;
 	padding-right: 20px;
 }
@@ -1043,17 +904,13 @@ h1,h2,h3,h4,h5,h6{
 	height: 76px;
 	background: rgba(108, 108, 108, 0.2);
 	backdrop-filter: blur(10px);
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
-
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 27px;
-	/* identical to box height */
 	color: #FFFFFF;
-
 	padding-left: 47px;
 	padding-right: 20px;
 	margin-left: 26px;	
@@ -1068,24 +925,18 @@ h1,h2,h3,h4,h5,h6{
 	height: 192px;
 	background: rgba(108, 108, 108, 0.2);
 	backdrop-filter: blur(10px);
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
-
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 27px;
-	/* identical to box height */
 	color: #FFFFFF;
-
 	padding-left: 47px;
 	padding-right: 20px;
 	padding-top: 35px;
 	margin-bottom: 30px;
-
 	resize: none;
-
 }
 
 .input_checkbox {
@@ -1130,15 +981,11 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 600;
 	font-size: 30px;
 	line-height: 37px;
-
-	/* 2 */
-
 	background: linear-gradient(90deg, #72C3FF 0.08%, #2B99FF 94.64%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
-
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -1148,7 +995,6 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 500;
 	font-size: 19px;
 	line-height: 23px;
-
 	color: #FFFFFF;
 }
 
@@ -1156,31 +1002,8 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Montserrat';
 	text-align: center;
 	color: #FFFFFF;
-/*	border: 1px solid orange;*/
 	background: linear-gradient(102.37deg, rgba(196, 196, 196, 0.091) -1.6%, rgba(196, 196, 196, 0.014) 100%);
-
-/*	border-radius: 41px;
-	background: linear-gradient(102.37deg, rgba(196, 196, 196, 0.091) -1.6%, rgba(196, 196, 196, 0.014) 100%);;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(5px);
-	transition: background-color 0.3s ease 0s;*/
 }
-
-
-/*.swal-button:before {
-	content: "";
- 	position: absolute;
-	inset: 0;
-	border-radius: 43px;
-	padding: 3px;
-	background: linear-gradient(94.49deg, #CC6922 22.49%, #FF4D4D 81.16%);
-	-webkit-mask: 
-		linear-gradient(#fff 0 0) content-box, 
-		linear-gradient(#fff 0 0);
-	-webkit-mask-composite: xor;
-    mask-composite: exclude;
-}*/
-
 
 .button_send {
 	padding-top: 0px;
@@ -1231,33 +1054,14 @@ h1,h2,h3,h4,h5,h6{
 	width: 65%;
 	background: black;
 	clip-path: polygon(0 0, 100% 0, 44% 100%, 0 100%);
-	/*bottom: green;
-	border-top: 800px solid blue;
-	border-right: 1070px solid transparent;*/
 	position: absolute;
 	z-index: 20;
 }
-
-/*.figure:before {
-	content: '';
-	width: 500px;
-	height: 800px;
-}*/
 
 .contacts_content {
 	position: absolute;
 	z-index: 30;
 }
-
-/*.contacts_content:before {
-	content: " ";
-	height: 0;
-	bottom: green;
-	border-top: 1070px solid black;
-	border-right: 801px solid transparent;
-	position: absolute;
-	z-index: 20;
-}*/
 
 .contacts_map {
 	position: relative;
@@ -1345,9 +1149,6 @@ footer {
 .menuEnd_link a:hover {
     border-bottom: 1px solid #FFFFFF;
 }
-/*#enter_text:focus {
-	height: 192px;
-}*/
 
 
 /* =================== adaptive =================== */
@@ -1833,7 +1634,6 @@ footer {
 	.lawyer img {
 		margin: 35px auto;
 		display: block;
-		/* margin: 35px 0 30px 40px; */
 		width: 160px;
 		height: 160px;
 	}
@@ -1852,7 +1652,6 @@ footer {
 	.price_content {
 		gap: 90px;
 		padding-bottom: 70px;
-		/* justify-content: space-between; */
 	}
 
 	.price {
@@ -2064,7 +1863,6 @@ footer {
 	.slider-list {
 		width: 222px;
 		height: 348px;
-		/*overflow: hidden;*/
 	}
 
 	.slider-list.grab {
@@ -2086,17 +1884,12 @@ footer {
 		/* Чтобы слайды не сжимались */
 		flex-shrink: 0;
 		/* Увеличиваем и центрируем цифру внутри слайда */
-		/*font-size: 50px;*/
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: start;
-		/*border: 1px solid #000;*/
-
 		background: rgba(108, 108, 108, 0.13);
 		backdrop-filter: blur(5px);
-		/* Note: backdrop-filter has minimal browser support */
-
 		border-radius: 15px
 	}
 
@@ -2169,20 +1962,16 @@ footer {
 	.price {
 		background: rgba(133, 133, 133, 0.13);
 		backdrop-filter: blur(5px);
-		/* Note: backdrop-filter has minimal browser support */
 		border-radius: 15px;
-
 		height: 500px;
 		width: 85%;
 		margin: 0 auto;
-
 	}
 
 	.price-title {
 		font-size: 22px;
 		line-height: 28px;
 		text-align: left;
-
 		background: rgba(0, 0, 0, 0);
 		height: auto;
 		border-radius: 15px 15px 0 0;
@@ -2281,7 +2070,6 @@ footer {
 		border-radius: 15px;
 		font-size: 14px;
 		line-height: 20px;
-		/* identical to box height */
 		color: #FFFFFF;
 		padding-left: 25px;
 		padding-right: 10px;
@@ -2367,15 +2155,11 @@ footer {
 		font-weight: 600;
 		font-size: 30px;
 		line-height: 37px;
-
-		/* 2 */
-
 		background: linear-gradient(90deg, #72C3FF 0.08%, #2B99FF 94.64%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		text-fill-color: transparent;
-
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 
@@ -2385,7 +2169,6 @@ footer {
 		font-weight: 500;
 		font-size: 19px;
 		line-height: 23px;
-
 		color: #FFFFFF;
 	}
 
@@ -2393,14 +2176,7 @@ footer {
 		font-family: 'Montserrat';
 		text-align: center;
 		color: #FFFFFF;
-		/*	border: 1px solid orange;*/
 		background: linear-gradient(102.37deg, rgba(196, 196, 196, 0.091) -1.6%, rgba(196, 196, 196, 0.014) 100%);
-
-		/*	border-radius: 41px;
-            background: linear-gradient(102.37deg, rgba(196, 196, 196, 0.091) -1.6%, rgba(196, 196, 196, 0.014) 100%);;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(5px);
-            transition: background-color 0.3s ease 0s;*/
 	}
 
 	.button_send {
@@ -2501,7 +2277,6 @@ footer {
 
 	/*--------start block--------*/
 	.start_block {
-		/* background-image: conic-gradient(from 171.26deg at 45.75% 112.5%, #5683C6 0deg, #000000 116.25deg, #5683C6 360deg); */
 		padding: 243px 0px 64px 0px; 
 
 	}
@@ -2578,8 +2353,6 @@ footer {
 
 	.advantage_img {
 		position: relative;
-		/*width: 82px;
-		height: 75px;*/
 		top: 0px;
 		left: 0px;
 	}
@@ -2631,15 +2404,12 @@ footer {
 	.useful-text-title {
 		font-size: 18px;
 		line-height: 22px;
-
 		background: linear-gradient(90deg, #72C3FF 0.08%, #2B99FF 94.64%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		text-fill-color: transparent;
-
 		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
 		padding-bottom: 20px;
 	}
 
@@ -2664,10 +2434,6 @@ footer {
 		padding-left: 15px;
 		list-style-position: inside;
 	}
-
-	.useful_img_q3 {
-		/*float: left;
-	*/}
 
 	.useful_img_q4 {
 		padding-top: 30px;
@@ -2701,7 +2467,6 @@ footer {
 		border-radius: 32px;
 		backdrop-filter: blur(5px);
 		margin: 47px 0 0 0;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -2719,7 +2484,6 @@ footer {
 	.button_seven {
 		font-size: 24px;
 		line-height: 29px;
-
 		color: rgba(229, 240, 248, 1);
 		margin-left: 8px;
 		margin-right: 4px;
@@ -2729,7 +2493,6 @@ footer {
 	.call_me_number {
 		font-size: 24px;
 		line-height: 29px;
-
 		color: rgba(108, 108, 108, 0.72);
 		background: none;
 		width: 210px;
@@ -2742,11 +2505,9 @@ footer {
 		line-height: 20px;
 		padding-top: 14px;
 		text-align: center;
-
 		background: #2A2D31;;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 		backdrop-filter: blur(5px);
-
 		margin: 40px 0 0 0;
 	}
 
@@ -2766,7 +2527,6 @@ footer {
 	.price_title {
 		font-size: 28px;
 		line-height: 34px;
-
 		padding: 19px 0 52px 0;
 	}
 
@@ -2780,9 +2540,7 @@ footer {
 	.price {
 		background: rgba(133, 133, 133, 0.13);
 		backdrop-filter: blur(5px);
-		/* Note: backdrop-filter has minimal browser support */
 		border-radius: 15px;
-
 		min-height: 500px;
 		height: auto;
 		width: 100%;
@@ -2794,7 +2552,6 @@ footer {
 		font-size: 22px;
 		line-height: 28px;
 		text-align: left;
-
 		background: rgba(0, 0, 0, 0);
 		height: auto;
 		border-radius: 15px 15px 0 0;
@@ -2884,7 +2641,6 @@ footer {
 		position: absolute;
 		left: 0px;
 		transition: all ease 1s;
-		/*left: -595px;*/
 	}
 
 	.case {
