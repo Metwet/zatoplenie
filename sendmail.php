@@ -34,9 +34,10 @@
     $mail->Password   = 'mrfwpocbnzpcsvje';
     $mail->SMPTSecure = 'ssl';
 
-    $mail->setFrom('advokat.nkl@gmail.com', 'Заявка с вашего сайта');
+    $mail->setFrom('tselm.nkl@gmail.com', 'Заявка с вашего сайта');
+    // $mail->setFrom('advokat.nkl@gmail.com', 'Заявка с вашего сайта');
     $mail->addAddress('tselm.nkl@gmail.com');
-    $mail->addAddress('advokat.nkl@gmail.com');
+    // $mail->addAddress('advokat.nkl@gmail.com');
 
     $mail->IsHTML(true);
     $mail->Subject = $title;
